@@ -61,7 +61,6 @@ Create `.env`:
 MONGO_URI=your-mongodb-uri
 PORT=5000
 NODE_ENV=development
-FRONTEND_URL=http://localhost:3000
 
 Start backend:
 npm run dev
@@ -314,7 +313,3 @@ Deployment notes:
 - Category must be one of the valid enums
 
 ---
-
-## 12. Disclaimer
-This document is the sole property of WHIZLABS.  
-Any use or duplication of this document without express permission is strictly forbidden.
