@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useItems } from '../context/ItemsContext';
 
-const CATEGORIES = ['Electronics', 'Clothing', 'Furniture', 'Other'];
+const CATEGORIES = ['Electronics', 'Clothing', 'Furniture','Groceries','Food', 'Other'];
 
 const ItemForm = () => {
   const navigate = useNavigate();
