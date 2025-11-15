@@ -39,35 +39,8 @@ const createApiConfig = () => {
   };
 };
 
-const createApiConfigForFiles = () => {
-  const request = async (url, options = {}) => {
-    const fullUrl = `${API_BASE_URL}${url}`;
-    
-    try {
-      const response = await fetch(fullUrl, options);
+// API route constants
+export const ITEMS_API_URL = '/items';
 
-      if (!response.ok) {
-        const data = await response.json().catch(() => ({}));
-        throw new Error(data.error || data.message || 'An error occurred');
-      }
-
-      return response;
-    } catch (error) {
-      throw error;
-    }
-  };
-
-  return {
-    post: (url, formData) => request(url, {
-      method: 'POST',
-      body: formData,
-    }),
-    put: (url, formData) => request(url, {
-      method: 'PUT',
-      body: formData,
-    }),
-  };
-};
-
-export { createApiConfig, createApiConfigForFiles };
+export { createApiConfig };
 

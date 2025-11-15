@@ -1,6 +1,6 @@
 // Item API functions
-import { createApiConfig } from "../config";
-import { ITEMS_API_URL } from "../routes";
+import { createApiConfig, ITEMS_API_URL } from "../config";
+
 
 const apiConfig = createApiConfig();
 
